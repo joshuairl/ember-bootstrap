@@ -9,6 +9,8 @@ module.exports = {
     'SLChrome',
     'SLFirefox',
     'SLIE11',
+    'SLIE10',
+    'SLIE9',
     'SLSafari'
   ],
 
@@ -71,6 +73,44 @@ module.exports = {
         'public',
         '-p',
         'Windows 10',
+        '--attach',
+        '--no-connect',
+        '--url'
+      ],
+      'protocol': 'browser'
+    },
+
+    SLIE10: {
+      'exe': 'ember',
+      'args': [
+        'sauce:launch',
+        '-b',
+        'internet explorer',
+        '-v',
+        '10',
+        '--visibility',
+        'public',
+        '-p',
+        'Windows 8',
+        '--attach',
+        '--no-connect',
+        '--url'
+      ],
+      'protocol': 'browser'
+    },
+
+    SLIE9: {
+      'exe': 'ember',
+      'args': [
+        'sauce:launch',
+        '-b',
+        'internet explorer',
+        '-v',
+        '9',
+        '--visibility',
+        'public',
+        '-p',
+        'Windows 7',
         '--attach',
         '--no-connect',
         '--url'
