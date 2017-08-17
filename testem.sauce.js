@@ -6,13 +6,13 @@ module.exports = {
   'parallel': 5,
   'browser_start_timeout': 90,
   'launch_in_ci': [
-    // 'SLEdge',
-    // 'SLChrome',
-    // 'SLFirefox',
-    // 'SLIE11',
-    // 'SLIE10',
-    'SLIE9'
-    // 'SLSafari'
+    'SLEdge',
+    'SLChrome',
+    'SLFirefox',
+    'SLIE11',
+    'SLIE10',
+    'SLIE9',
+    'SLSafari'
   ],
 
   'launch_in_dev': [
